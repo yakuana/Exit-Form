@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// styles consistent across the app 
+import "./App.css";
+
+// components
+import Form from "./components/Form.js";
+import Navigation from "./components/Navigation.js";
+import ErrorMessage from "./components/ErrorMessage.js"
+
+export default function App() {
+    return (
+        <div className="App">
+            <Navigation />
+            <div className="all-content">
+                <Route path="/:id" component={Form} />
+                <Route path="/" component={ErrorMessage} /> 
+            </div>
+        </div>
+    );
 }
-
-export default App;

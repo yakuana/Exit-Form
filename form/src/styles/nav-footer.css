@@ -1,0 +1,111 @@
+/* Navigation.js and Footer.js */
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: var(--white);
+    border: 1px solid var(--lightgrey);
+    padding: 25px 0;
+    width: 100%;
+}
+
+#nav-bar {
+    display: flex;
+    font-size: var(--smallText);
+    margin-right: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  #nav-bar {
+    display: none;
+  }
+} */
+
+#nav-logo {
+    width: 140px;
+    padding-left: 40px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    #nav-logo {
+        width: 100px;
+        padding-left: 10px;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    margin: auto 0;
+    color: black;
+}
+
+    .nav-link:hover,
+    .nav-active {
+        color: var(--logoRed);
+    }
+
+.nav-divider {
+    /* width: .5px;  */
+    height: 12px;
+    border: 1px solid rgb(233, 233, 233);
+    margin: auto 0;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+}
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .all-content {
+        padding-top: 100px;
+    }
+
+#footer-container {
+    border-top: 2px solid var(--lightgrey);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #footer-container {
+        display: none;
+    }
+}
+
+#footer-container h4 {
+    font-size: var(--subHeaderSize);
+    font-weight: bold;
+}
+
+.footer-icons {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 40px;
+}
+
+    #footer-links p:hover {
+        text-decoration: underline;
+    }
+
+#copyright {
+    padding: 10px 0 15px 0;
+}

@@ -1,38 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
 .App {
-  text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Page content */
+.all-content {
+    padding: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+    background-color: var(--logoRed);
+    border: none;
+    padding: 15px 10px;
+    color: var(--white);
+    font-weight: bold;
+    transition: 1s all;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    .button:hover {
+        background-color: var(--logoDarkRed);
+    }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+    --lightgrey: rgb(233, 233, 233);
+    --mediumGrey: rgb(119, 115, 115);
+    --logoRed: rgb(217, 34, 49);
+    --logoDarkRed: rgb(151, 26, 37);
+    --lightBlue: rgb(126, 188, 241);
+    --mediumBlue: rgb(9, 113, 241);
+    --black: black;
+    --white: white;
+    --whiteSmoke: rgb(244, 244, 244);
+    --smallTextSize: 18px;
+    --mediumTextSize: 25px;
+    --headerSize: 75px;
+    --subHeaderSize: 20px;
+    --subTextSize: 28px;
+    --leftPaddingDesktop: 90px;
+    --leftPaddingMobile: 5px;
 }
