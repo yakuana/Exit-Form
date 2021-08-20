@@ -1,0 +1,87 @@
+/* Form.js styles */
+
+#exitform-container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    #exitform-container {
+        width: 100%;
+    }
+}
+
+#ef-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    background-color: var(--whiteSmoke);
+    padding: 30px 70px 50px 70px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    #ef-container {
+        padding: 10px;
+    }
+}
+
+#ef-container h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.organize-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--lightgrey);
+}
+
+.form-textarea {
+    resize: none;
+    height: 100px;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid var(--lightgrey);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.form-button {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.ef-policy {
+    margin: 0 0 5px 0;
+}
+
+.error-message {
+    display: flex;
+    padding: 5px 10px 10px 10px;
+    color: red;
+}
+
+#thank-you-container {
+    min-height: 400px;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.check-circle {
+    font-size: 45px;
+    transition: opacity 0.7s;
+    opacity: 0;
+}
+
+.fade {
+    opacity: 1;
+}
